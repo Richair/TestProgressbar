@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="5dip" />
+
+            <!-- android:angle是渐变角度，必须为45的整数倍，默认水平渐变 -->
+            <!-- 渐变默认的模式：线性渐变为android:type="linear"，径向渐变，android:type="radial"，径向渐变需要指定半径android:gradientRadius="50" -->
+            <gradient
+                android:angle="90"
+                android:centerColor="#0000ff"
+                android:centerY="0.5"
+                android:endColor="#ff00ff"
+                android:gradientRadius="50"
+                android:startColor="#ff0000"
+                android:type="radial" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#ffffff"
+                    android:centerY="0.75"
+                    android:endColor="#ff0000"
+                    android:startColor="#ff00ff" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+
+                <!-- 描边弄成虚线 -->
+                <stroke
+                    android:dashGap="3dp"
+                    android:dashWidth="5dp"
+                    android:width="3dp"
+                    android:color="#000000" />
+
+                <gradient
+                    android:angle="270"
+                    android:endColor="#AEEEEE"
+                    android:startColor="#FF3030" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
