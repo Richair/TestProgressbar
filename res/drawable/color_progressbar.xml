@@ -14,7 +14,7 @@
                 android:endColor="#ff00ff"
                 android:gradientRadius="50"
                 android:startColor="#ff0000"
-                android:type="radial" />
+                android:type="linear" />
         </shape>
     </item>
     <item android:id="@android:id/secondaryProgress">
@@ -32,7 +32,8 @@
         </clip>
     </item>
     <item android:id="@android:id/progress">
-        <clip>
+        <clip android:clipOrientation="vertical"
+             android:gravity="bottom">
             <shape>
                 <corners android:radius="5dip" />
 
@@ -44,7 +45,7 @@
                     android:color="#000000" />
 
                 <gradient
-                    android:angle="270"
+                    android:angle="90"
                     android:endColor="#AEEEEE"
                     android:startColor="#FF3030" />
             </shape>

@@ -3,7 +3,8 @@
 
     <item
         android:id="@+android:id/background"
-        android:drawable="@drawable/comment_star_normal">
+        android:left="40dp"
+        android:drawable="@drawable/ratebar_sel_bg">
     </item>
 
     <span>
@@ -11,6 +12,7 @@
     <!-- @+android:id/secondaryProgress与@+android:id/background相同 -->
     <item
         android:id="@+android:id/secondaryProgress"
+        android:left="40dp"
         android:drawable="@drawable/comment_star_normal">
     </item>
     <item

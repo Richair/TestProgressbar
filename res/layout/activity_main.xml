@@ -230,12 +230,13 @@
                 android:text="自定义渐变色进度条ProgressBar" />
 
             <ProgressBar
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
                 android:max="100"
                 android:progress="20"
-                android:secondaryProgress="60"
-                android:indeterminateDrawable="@drawable/color_progressbar" />
+                android:progressDrawable="@drawable/color_progressbar"
+                android:secondaryProgress="40" />
         </LinearLayout>
 
         <LinearLayout
@@ -253,9 +254,8 @@
                 android:layout_height="wrap_content"
                 android:indeterminateDrawable="@drawable/color_progress2" />
         </LinearLayout>
-        
-        
-         <LinearLayout
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
@@ -266,12 +266,24 @@
                 android:text="自定义RatingBar" />
 
             <RatingBar
+                style="@style/roomRatingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/roomRatingBar"
+                android:isIndicator="false"
                 android:numStars="8"
                 android:rating="1.5"
                 android:stepSize="0.5" />
+        </LinearLayout>
+
+        <com.example.testprogressbar.Arcs
+            android:layout_width="200dp"
+            android:layout_height="100dp" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
         </LinearLayout>
     </LinearLayout>
 
